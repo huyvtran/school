@@ -1,0 +1,104 @@
+page-login {
+    text-align: center;
+    .school-logo-box {
+        margin-top: 50px;
+        margin-bottom: 40px;
+        line-height: 59px;
+        height: 59px;
+        display: inline-block;
+        font-size: 20px;
+        img {
+            float: left;
+            width: 59px;
+        }
+        .app-info {
+            float: left;
+            margin-left: 20px;
+            .app-name {
+                clear: both;
+                font-size: 30px;
+                letter-spacing: 5px;
+                line-height: normal;
+                color: color($colors, secondary);
+            }
+            .app-blank {
+                display: inline-block;
+                width: 16px;
+            }
+            .app-sub {
+                line-height: normal;
+            }
+        }
+    }
+    .item-inner-base {
+        border-bottom: 1px solid color($colors, light);
+        box-shadow: none;
+    }
+    .item-inner-noborder-base {
+        box-shadow: none;
+        border-bottom: none;
+    }
+    .item-ios.item-block .item-inner {
+        @extend .item-inner-noborder-base;
+    }
+    .item-ios.item-input.ng-invalid.ng-touched:not(.input-has-focus) .item-inner {
+        @extend .item-inner-noborder-base;
+    }
+    .item-ios.item-input.input-has-focus .item-inner {
+        @extend .item-inner-noborder-base;
+    }
+    .item-ios ion-icon[item-left]+.item-inner,
+    .item-ios ion-icon[item-left]+.item-input,
+    .item-ios ion-icon[item-start]+.item-inner,
+    .item-ios ion-icon[item-start]+.item-input {
+        margin-left: 0;
+    }
+    .item-ios [item-left],
+    .item-ios [item-right],
+    .item-ios [item-start],
+    .item-ios [item-end] {
+        margin-right: 0;
+    }
+    .text-input-ios {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 3px;
+        margin-right: 0;
+        height: 42px;
+    }
+    .item-ios {
+        @extend .item-inner-base;
+        padding-left: 3px;
+        height: 45px;
+        border-radius: 5px;
+    }
+    .item-ios:first-child {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .no-border {
+        @extend .item-inner-noborder-base;
+    }
+    .login-box {
+        border: 1px solid color($colors, light);
+        border-radius: 5px;
+        background-color: #fff;
+    }
+    .icon-ios img {
+        height: 20px;
+        width: auto;
+    }
+    .checkbox-ios {
+        top: 3px;
+    }
+    .checkbox-ios .checkbox-icon {
+        border-radius: 50%;
+        border-color: color($colors, secondary);
+    }
+    .checkbox-ios-secondary .checkbox-checked {
+        background-color: color($colors, secondary);
+    }
+    .button-inner {
+        font-size: 16px;
+    }
+}

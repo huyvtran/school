@@ -1,0 +1,29 @@
+<!--
+  Generated template for the TeacherListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>任课老师</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+    <ion-list *ngFor="let course of courses">
+        <ion-list-header>{{course.courseName}}</ion-list-header>
+        <ion-item-sliding>
+            <ion-item *ngFor="let teacher of course.teachers">
+                <img src="assets/images/user/default.png">
+                <span>{{teacher.teacherName}}</span>
+                <span>{{teacher.teacherSex | sex}}</span>
+            </ion-item>
+        </ion-item-sliding>
+    </ion-list>
+
+</ion-content>

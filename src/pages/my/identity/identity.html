@@ -1,0 +1,31 @@
+<!--
+  Generated template for the IdentityPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>身份</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+    <ion-list radio-group class="role-wrap mtop">
+        <ion-item *ngFor="let member of members">
+            <ion-label>
+                <div class="role {{member.cls}}">{{member.name}}</div>
+            </ion-label>
+            <ion-radio checked="{{member.isCheck}}" value="{{member.id}}"></ion-radio>
+        </ion-item>
+    </ion-list>
+
+    <div style="margin: 20px 10px 0 10px;">
+        <button ion-button block color="secondary">切换</button>
+    </div>
+
+</ion-content>

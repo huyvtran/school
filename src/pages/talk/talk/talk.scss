@@ -1,0 +1,68 @@
+page-talk {
+    .face-items {
+        padding: 5px;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        img {
+            margin: 7px;
+            width: 20px;
+            height: auto;
+        }
+        height: 120px;
+    }
+
+    .item-ios ion-avatar ion-img, .item-ios ion-avatar img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .item-ios p {
+        margin-top: 5px;
+    }
+
+    .item-ios ion-avatar {
+        position: relative;
+
+        .item-badge {
+            position: absolute;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            color: #fff;
+            background: #ff0000;
+            border-radius: 50%;
+            top: 0;
+            right: -3px;
+            line-height: 20px;
+            text-align: center;
+        }
+    }
+}
+
+.talk-operator-popover {
+    .popover-content {
+        width: 140px !important;
+        background: #2db769;
+        border-radius: 5px;
+    }
+
+    .popover-arrow::after {
+        background: #2db769;
+        width: 10px;
+        height: 10px;
+        top: 5px;
+    }
+
+    .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+        border: none;
+    }
+
+    .item-ios {
+        background: #2db769;
+        color: #fff;
+    }
+
+    .list-ios {
+        margin-bottom: 0;
+    }
+}

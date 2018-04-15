@@ -1,0 +1,46 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>我的</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div class="user-wrap role-wrap mtop border-top">
+        <div class="user-box">
+            <div *ngIf="user" class="user-info">
+                <a href="javascript:;" tappable auth="true" link="my/userInfo">
+                    <img src="assets/images/user/default.png" />
+                    <div class="user-name-wrap">
+                        <div class="user-name">{{user.name}}</div>
+                        <div class="user-tel">手机号码：{{user.phone}}</div>
+                    </div>
+                </a>
+            </div>
+            <div *ngIf="user==null" class="user-info">
+                <img src="assets/images/user/default.png" />
+                <div class="user-name-wrap" style="line-height: 48px;"><a href="javascript:void(0);" tappable link="login">登录</a></div>
+            </div>
+
+            <div *ngIf="user && user.member && user.member.name" class="role-info">
+                <role [role]="member"></role>
+                <div class="more"></div>
+            </div>
+        </div>
+        <role-list-box *ngIf="user && user.members" [roles]="members"></role-list-box>
+    </div>
+
+    <ion-list class="mtop">
+        <ion-item auth="true">
+            <ion-icon name="school-card" item-left >
+                <img src="assets/images/icon/icon-school-card.png" />
+            </ion-icon>
+            校园卡
+        </ion-item>
+        <ion-item tappable link="my/settings" >
+            <ion-icon name="my-settings" item-left >
+                <img src="assets/images/icon/icon-settings.png" />
+            </ion-icon>
+            设置
+        </ion-item>
+    </ion-list>
+</ion-content>

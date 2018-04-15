@@ -1,0 +1,41 @@
+<!--
+  Generated template for the SettingsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>设置</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <ion-list class="mtop">
+        <ion-item tappable auth="true" link="my/shortcut">
+            快捷操作
+        </ion-item>
+    </ion-list>
+
+    <ion-list>
+        <ion-item tappable (click)="clearTalkRecords()">
+            清空聊天记录
+        </ion-item>
+    </ion-list>
+
+    <ion-list>
+        <ion-item tappable link="my/about">
+            关于
+        </ion-item>
+        <ion-item tappable (click)="updateVersion()">
+            版本更新
+        </ion-item>
+        <ion-item tappable (click)="logout()" *ngIf="user">
+            退出
+        </ion-item>
+    </ion-list>
+
+</ion-content>

@@ -1,0 +1,60 @@
+page-home {
+    .banner {
+        img {
+            display: block;
+        }
+    }
+    ion-slides {
+        height: auto;
+        border-bottom: 1px solid color($colors, light);
+    }
+    .zixun-title {
+        border-top: 1px solid color($colors, light);
+        border-bottom: 1px solid color($colors, light);
+        padding: 8px 10px 8px 40px;
+        position: relative;
+        text-align: left;
+    }
+    .zixun-title:before {
+        content: '';
+        background: url('../assets/images/icon/zixun.png') no-repeat;
+        background-size: 21px 20px;
+        height: 20px;
+        width: 21px;
+        position: absolute;
+        left: 10px;
+    }
+    .zixun-list {
+        padding-left: 10px;
+        border-bottom: 1px solid color($colors, light);
+        margin-bottom: 5px;
+        li {
+            text-align: left;
+            padding: 10px 0;
+            border-bottom: 1px solid color($colors, light);
+            .zixun-img {
+                float: left;
+                margin-right: 10px;
+                width: 105px;
+                height: 59px;
+                background: url(../assets/images/bg/zixun.png) center;
+                background-size: 100%;
+                img {
+                    width: 105px;
+                }
+            }
+            .zixun-content {
+                margin-top: 5px;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                word-break: break-all;
+                overflow: hidden;
+                color: #999;
+            }
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+    }
+}

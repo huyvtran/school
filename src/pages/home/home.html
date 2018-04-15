@@ -1,0 +1,49 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>{{school.name}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-slides #ionSlides autoplay="2000" loop="true" speed="300" pager="true" class="border-bottom">
+        <ion-slide *ngFor="let slider of sliders">
+            <div class="box banner"><img src="assets/images/slider/{{slider}}" /></div>
+        </ion-slide>
+    </ion-slides>
+
+    <ul class="tool-box m10 white-bg">
+        <li *ngFor="let fun of funs">
+            <a href="javascript:;" tappable link="{{fun.url}}" *ngIf="fun.needAuth==1" auth="true" [params]="fun">
+                <img src="{{fun.logo}}">
+                <label>{{fun.name}}</label>
+            </a>
+            <a href="javascript:;" tappable link="{{fun.url}}" *ngIf="fun.needAuth==0" [params]="fun">
+                <img src="{{fun.logo}}">
+                <label>{{fun.name}}</label>
+            </a>
+        </li>
+    </ul>
+
+    <div class="zixun-title m10 white-bg">
+        教育咨询
+    </div>
+    <ul class="zixun-list white-bg">
+        <li *ngFor="let zixun of zixuns">
+            <a href="javascript:;" tappable link="school/article" [params]="zixun">
+                <div class="zixun-img">
+                    <img src="{{zixun.imageUrl}}" />
+                </div>
+                <div>
+                    <b>{{zixun.title}}</b>
+                    <div class="zixun-content" style="-webkit-box-orient: vertical">
+                        {{zixun.summary}}
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+
+    <ion-infinite-scroll #infiniteScroll (ionInfinite)="doInfinite($event)">
+        <ion-infinite-scroll-content loadingText="正在加载..."></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+</ion-content>

@@ -1,0 +1,88 @@
+.register-step {
+    color: #909090;
+    overflow: hidden;
+    padding: 10px 0;
+    .step1,
+    .step2,
+    .step3 {
+        float: left;
+        width: 33.3%;
+        position: relative;
+        padding-top: 25px;
+        text-align: center;
+    }
+    .step1:before,
+    .step2:before,
+    .step3:before {
+        content: '';
+        position: absolute;
+        height: 3px;
+        background: #d6d7dc;
+        top: 10px;
+    }
+    .step1::after,
+    .step2:after,
+    .step3:after {
+        content: '';
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        top: 0;
+        left: 50%;
+        margin-left: -10px;
+        z-index: 2;
+    }
+    .step1:before {
+        width: 50%;
+        right: 0;
+    }
+    .step1::after {
+        background: url('../assets/images/register/icon-1.png') no-repeat;
+        background-size: 20px 20px;
+    }
+    .step2:before {
+        width: 100%;
+        left: 0;
+    }
+    .step2::after {
+        background: url('../assets/images/register/icon-2.png') no-repeat;
+        background-size: 20px 20px;
+    }
+    .step3:before {
+        width: 50%;
+        left: 0;
+    }
+    .step3::after {
+        background: url('../assets/images/register/icon-3.png') no-repeat;
+        background-size: 20px 20px;
+    }
+    .check {
+        color: color($colors, secondary);
+    }
+    .check:before {
+        background: color($colors, secondary);
+    }
+    .step1.check::after {
+        background: url('../assets/images/register/icon-1-ck.png') no-repeat;
+        background-size: 20px 20px;
+    }
+    .step2.check::after {
+        background: url('../assets/images/register/icon-2-ck.png') no-repeat;
+        background-size: 20px 20px;
+    }
+    .step3.check::after {
+        background: url('../assets/images/register/icon-3-ck.png') no-repeat;
+        background-size: 20px 20px;
+    }
+}
+
+page-step1 {
+    position: relative;
+    .code-btn {
+        position: absolute;
+        top: 154px;
+        width: 60px;
+        height: 30px;
+        right: 10px;
+    }
+}

@@ -1,0 +1,23 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>校园</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <ul class="tool-box white-bg">
+        <li *ngFor="let fun of funs">
+            <a tappable href="javascript:;" link="{{fun.url}}" *ngIf="fun.needAuth==1" [params]="fun" auth="true">
+                <img src="{{fun.logo}}">
+                <label>{{fun.name}}</label>
+            </a>
+            <a tappable href="javascript:;" link="{{fun.url}}" *ngIf="fun.needAuth==0" [params]="fun">
+                <img src="{{fun.logo}}">
+                <label>{{fun.name}}</label>
+            </a>
+        </li>
+    </ul>
+</ion-content>

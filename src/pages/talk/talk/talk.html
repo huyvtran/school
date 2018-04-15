@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>校信</ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="showOperators($event)">
+              <ion-icon name="options"></ion-icon>
+            </button>
+          </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-list>
+        <ion-item *ngFor="let item of talks" tappable (click)="gotoTalkPage(item)">
+            <ion-avatar item-start>
+                <img src="{{item.image}}">
+                <span class="item-badge" *ngIf="item.unreadCount > 0">{{item.unreadCount}}</span>
+            </ion-avatar>
+            <h2>{{item.name}}</h2>
+            <p>{{item.content}}</p>
+            <ion-note item-end>
+                {{item.time}}
+            </ion-note>
+        </ion-item>
+        
+    </ion-list>
+
+</ion-content>

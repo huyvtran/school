@@ -1,0 +1,37 @@
+<!--
+  Generated template for the Step2Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>选定身份</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+    <div class="register-step">
+        <div class="step1 check">基本信息</div>
+        <div class="step2 check">选定身份</div>
+        <div class="step3">结果页面</div>
+    </div>
+
+    <ion-list radio-group class="role-wrap" [(ngModel)]="type">
+        <ion-item *ngFor="let member of members">
+            <ion-label>
+                <div class="role {{member.cls}}">{{member.name}}</div>
+            </ion-label>
+            <ion-radio  value="{{member.id}}"></ion-radio>
+        </ion-item>
+    </ion-list>
+
+    <div style="margin: 15px 10px 0 10px;">
+        <button ion-button block color="secondary" tappable (click)="nextStep()">下一步</button>
+    </div>
+
+</ion-content>

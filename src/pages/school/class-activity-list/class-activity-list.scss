@@ -1,0 +1,18 @@
+page-class-activity-list {
+    .card-ios {
+        border-radius: 5px;
+        padding: 8px;
+    }
+    .card-title {
+        height: 28px;
+        line-height: 28px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .card-time {
+        color: #bcbcbc;
+    }
+    .has-refresher>.scroll-content {
+        border-top: none;
+    }
+}

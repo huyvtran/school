@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-easemob-chat" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Chat</name>
+    <js-module name="Chat" src="www/Chat.js">
+        <clobbers target="Chat" />
+    </js-module>
+
+    <platform name="android">
+    	<config-file parent="/*" target="res/xml/config.xml">
+            <feature name="Chat">
+                <param name="android-package" value="com.srzx.school.chat.ChatPlugin" />
+            </feature>
+        </config-file>
+    </platform>
+</plugin>

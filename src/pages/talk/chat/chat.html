@@ -1,0 +1,41 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>{{name}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content scrollDownOnLoad="true">
+    <div class="chat-msg-wrap" *ngFor="let msg of msgList">
+        <div class="msg-time">
+            <span>{{msg.time}}</span>
+        </div>
+        <div class="msg-wrap {{msg.fromUser == ownerId ? 'my-msg' : 'other-msg'}}">
+            <ion-thumbnail>
+                <img src="{{msg.image}}" />
+            </ion-thumbnail>
+            <div class="msg-content">
+                <p [innerHTML]="decodeMsgContent(msg.content)"></p>
+            </div>
+        </div>
+    </div>
+</ion-content>
+
+<ion-footer>
+    <div class="chat-bar">
+        <form [formGroup]="form">
+            <content-input #input formControlName="content" (submit)="onSubmit()" (focus)="onInputFocus()" (resize)="onInputResize()"></content-input>
+            <div class="tool-bar">
+                <a href="javascript:void(0);" class="tool-btn" (click)="toggleFace()">
+                    <img src="assets/images/talk/chat/emoji.png" />
+                </a>
+            </div>
+        </form>
+    </div>
+    <div class="face-items">
+        <div>
+            <span *ngFor="let item of faceItems;" (click)="insertFace(item.src)">
+                <img src="{{item.src}}" />
+            </span>
+        </div>
+    </div>
+</ion-footer>

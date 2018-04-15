@@ -1,0 +1,165 @@
+.role-wrap {
+    .role {
+        padding-left: 30px;
+        float: left;
+        color: #999;
+        font-size: 16px;
+        position: relative;
+    }
+    .role:before {
+        content: '';
+        width: 25px;
+        height: 40px;
+        position: absolute;
+        left: 0;
+    }
+    .check,
+    .item-radio-checked .role {
+        color: color($colors, secondary);
+    }
+    .teacher:before {
+        background: url(../assets/images/icon/role.png) -4px -30px;
+        background-size: 100px 65px;
+        background-repeat: no-repeat;
+    }
+    .label-ios .teacher:before {
+        background: url(../assets/images/icon/role.png) -4px -37px;
+        background-size: 100px 65px;
+        background-repeat: no-repeat;
+    }
+    .teacher.check:before {
+        background: url(../assets/images/icon/role.png) -38px -30px;
+        background-size: 100px 65px;
+    }
+    .item-radio-checked .teacher:before {
+        background: url(../assets/images/icon/role.png) -38px -37px;
+        background-size: 100px 65px;
+    }
+    .parenter:before {
+        background: url(../assets/images/icon/role.png) -7px 2px;
+        background-size: 100px 65px;
+    }
+    .label-ios .parenter:before {
+        background: url(../assets/images/icon/role.png) -7px -5px;
+        background-size: 100px 65px;
+    }
+    .parenter.check:before {
+        background: url(../assets/images/icon/role.png) -45px 2px;
+        background-size: 100px 65px;
+    }
+    .item-radio-checked .parenter:before {
+        background: url(../assets/images/icon/role.png) -45px -5px;
+        background-size: 100px 65px;
+    }
+}
+
+.user-wrap {
+    border-bottom: 1px solid color($colors, light);
+    .user-box {
+        padding: 12px 10px;
+        background: #fff;
+        overflow: hidden;
+        .user-info,
+        .role-info {
+            height: 55px;
+            line-height: 55px;
+        }
+        .user-info {
+            float: left;
+            img {
+                width: 55px;
+                height: auto;
+                float: left;
+            }
+            .user-name-wrap {
+                float: left;
+                margin-left: 8px;
+                line-height: normal;
+                margin-top: 5px;
+                .user-name {
+                    font-size: 17px;
+                }
+                .user-tel {
+                    font-size: 13px;
+                    margin-top: 5px;
+                }
+            }
+        }
+        .role-info {
+            float: right;
+            .more {
+                background: url(../assets/images/role/role-down.png) no-repeat;
+                background-position: 0 25px;
+                width: 10px;
+                float: left;
+                height: 40px;
+                margin-left: 3px;
+            }
+            .role:before {
+                top: 9px;
+            }
+        }
+    }
+    .role-list-box {
+        position: relative;
+        display: none;
+        .role {
+            display: block;
+            float: inherit;
+            border-bottom: 1px solid #ececef;
+            line-height: 40px;
+            padding-right: 25px;
+        }
+        .role:last-child {
+            border-bottom: none;
+        }
+        .role-list {
+            position: absolute;
+            top: -15px;
+            z-index: 100;
+            right: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        .mask {
+            position: fixed;
+            width: 100%;
+            background-color: #b2b2b2;
+            opacity: 0.5;
+            z-index: 30;
+            left: 0;
+            top: 40px;
+            bottom: 0px;
+            z-index: 5;
+        }
+        .arrow_box {
+            position: relative;
+            border: 1px solid #fff;
+            z-index: 40;
+            border-radius: 5px;
+            background: #fff;
+            padding-left: 15px;
+        }
+        .arrow_box:after,
+        .arrow_box:before {
+            bottom: 100%;
+            left: 70%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+        .arrow_box:after {
+            border-bottom-color: #fff;
+            border-width: 8px;
+            margin-left: -8px;
+        }
+        .arrow_box:before {
+            border: 8px rgba(194, 225, 245, 0);
+            border-bottom-color: #fff;
+            margin-left: -8px;
+        }
+    }
+}

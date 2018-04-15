@@ -1,0 +1,21 @@
+page-teacher-list {
+    .item-ios {
+        .label-ios {
+            img {
+                width: 30px;
+                vertical-align: middle;
+            }
+            span {
+                display: inline-block;
+                margin-left: 5px;
+            }
+        }
+    }
+    .list-header-ios {
+        min-height: 10px;
+        .label-ios {
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+    }
+}

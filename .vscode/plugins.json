@@ -1,0 +1,1 @@
+{"plugins":["ionic-plugin-keyboard","cordova-plugin-whitelist","cordova-plugin-device","cordova-plugin-splashscreen","cordova-plugin-ionic-webview","cordova-plugin-network-information","cordova-plugin-appminimize","cordova-plugin-x-toast","cordova-plugin-app-version","cordova-plugin-easemob-chat","cordova-sqlite-storage","jpush-phonegap-plugin","cordova-plugin-jcore"]}

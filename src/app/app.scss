@@ -1,0 +1,198 @@
+img {
+    width: 100%;
+    height: auto;
+    zoom: 1;
+    border: none;
+}
+.swiper-slide img {
+    width: 100%;
+}
+a,
+a:hover,
+a:visited,
+a:link,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+.scroll-content {
+    overflow-y: auto;
+}
+
+* {
+    font-size: 14px;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.m10 {
+    margin-top: 10px;
+}
+
+.m5 {
+    margin-top: 5px;
+}
+
+.mtop {
+    margin-top: 10px;
+}
+
+.white-bg {
+    background-color: #fff;
+}
+
+.border {
+    border-top: 1px solid color($colors, light);
+    border-bottom: 1px solid color($colors, light);
+}
+
+.border-top {
+    border-top: 1px solid color($colors, light);
+}
+
+.micon {
+    margin: 0 !important;
+}
+
+.micon:before {
+    margin-top: 4px;
+}
+
+.item-end {
+    color: color($colors, icon);
+}
+
+.fixed-content {
+    background: #f0eff5;
+}
+
+.toolbar-ios {
+    padding: 0;
+}
+
+.label-ios {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.item-block {
+    min-height: 2.6em;
+}
+
+.back-button.show-back-button {
+    padding: 0 10px;
+}
+
+.label-ios+ion-input .text-input,
+.label-ios+ion-textarea .text-input,
+.label-ios+.input+.cloned-input {
+    margin-left: 0;
+    width: 100%;
+    outline: none;
+}
+
+.article-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.article-time {
+    margin-top: 10px;
+    color: #999;
+    text-align: center;
+}
+
+.article-content {
+    margin-top: 10px;
+    line-height: 25px;
+    img {
+        width: 100%;
+    }
+    p {
+        margin-top: 10px !important;
+    }
+    p:first-child {
+        margin-top: 0 !important;
+    }
+}
+
+.header-ios .toolbar-ios:last-child .toolbar-background-ios {
+    border-width: 0;
+}
+
+.item-ios {
+    //padding-right: 16px;
+}
+
+ion-label {
+    font-size: 16px;
+}
+
+.item-end {
+    font-size: 16px;
+}
+
+//对话框
+.alert-ios .alert-head {
+    padding-top: 5px;
+    padding-bottom: 0;
+}
+
+.alert-ios .alert-wrapper {
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.alert-message {
+    overflow-y: hidden;
+}
+
+.alert-ios [aria-checked=true] .alert-radio-label {
+    color: color($colors, secondary);
+}
+
+.alert-ios [aria-checked=true] .alert-radio-inner {
+    border-color: color($colors, secondary);
+}
+
+.alert-ios .alert-button {
+    color: #000;
+}
+
+.alert-ios .alert-tappable {
+    min-height: 30px;
+}
+
+.alert-radio-button {
+    padding-left: 10px;
+}
+
+.alert-ios .alert-radio-label {
+    padding: 10px 13px 10px 3px;
+}
+
+.alert-radio-button .button-inner {
+    border-bottom: 1px solid color($colors, light);
+}
+
+.alert-radio-button:last-child .button-inner {
+    border-bottom: none;
+}
+
+.alert-ios .alert-radio-group,
+.alert-ios .alert-checkbox-group {
+    overflow: hidden;
+}
+
+.label-ios .icon-ios {
+    margin-right: 16px;
+}
+
+@import '../assets/css/role.scss';
+@import '../assets/css/tool.scss';

@@ -1,0 +1,45 @@
+{
+    "logs": [
+        {
+            "outputFile": "/work/app/school/platforms/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/work/app/school/platforms/android/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "156,55,97",
+                        "endColumns": "63,41,58",
+                        "endOffsets": "215,92,151"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,119,161",
+                        "endColumns": "63,41,58",
+                        "endOffsets": "114,156,215"
+                    }
+                },
+                {
+                    "source": "/work/app/school/platforms/android/app/src/main/res/values/jpush_style.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "114",
+                        "endLines": "11",
+                        "endColumns": "12",
+                        "endOffsets": "677"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "220",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "783"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+#Sat Feb 10 06:06:20 CST 2018
+base.0=/work/app/school/platforms/android/app/build/intermediates/transforms/dex/release/0
+renamed.0=classes.dex
+file.0=/work/app/school/platforms/android/app/build/intermediates/transforms/dex/release/0/classes.dex

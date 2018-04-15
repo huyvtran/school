@@ -1,0 +1,137 @@
+page-chat {
+
+    .chat-msg-wrap {
+        .msg-time {
+            text-align: center;
+            margin: 5px 0;
+            span {
+                display: inline-block;
+                padding: 2px;
+                background: #e0dddd;
+                color: #666;
+                border-radius: 3px;
+            }
+        }
+        .msg-wrap {
+            padding: 0 5px;
+            display: flex;
+            ion-thumbnail {
+                img {
+                    width: 50px;
+                }
+            }
+            .msg-content {
+                flex: 1;
+                p {
+                    text-align: left;
+                    display: inline-block;
+                    background-color: #fff;
+                    padding: 5px;
+                    border-radius: 5px;
+                    border: 1px solid color($colors, light);
+                    color: #666;
+                    position: relative;
+                    word-wrap: break-word;
+                    word-break: break-all;
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: 10px;
+                        overflow: hidden;
+                        width: 8px;
+                        height: 8px;
+                        background: #fff;
+                        -webkit-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                    .face {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .other-msg {
+        .msg-content {
+            margin-left: 10px;
+            margin-right: 60px;
+            p {
+                &:after {
+                    left: -5px;
+                    border-bottom: 1px solid color($colors, light);
+                    border-left: 1px solid color($colors, light);
+                }
+            }
+        }
+    }
+
+    .my-msg {
+        flex-direction: row-reverse;
+        .msg-content {
+            text-align: right;
+            margin-right: 10px;
+            margin-left: 60px;
+            p {
+                &:after {
+                    right: -5px;
+                    border-right: 1px solid color($colors, light);
+                    border-top: 1px solid color($colors, light);
+                }
+            }
+        }
+        
+    }
+
+    .chat-bar {
+        padding: 5px;
+        border-top: 1px solid color($colors, light);
+        border-bottom: 1px solid color($colors, light);
+        display: flex;
+        form {
+            display: flex;
+            width: 100%;
+        }
+        content-input {
+            flex: 1;
+            width: 100%;
+            padding: 7px 5px;
+            background-color: #fff;
+        }
+        .tool-bar {
+            padding-left: 5px;
+
+            .tool-btn {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                outline: none;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .face-items {
+        text-align: center;
+        padding: 5px;
+        overflow: auto;
+        background-color: #fff;
+        -webkit-overflow-scrolling: touch;
+        height: 120px;
+        display: none;
+        > div {
+            text-align: left;
+            display: inline;
+            > span {
+                display: inline-block;
+            }
+        }
+        img {
+            margin: 7px;
+            width: 20px;
+            height: auto;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+page-position {
+    .item-radio-checked {
+        .label-ios {
+            color: color($colors, secondary);
+        }
+    }
+    .radio-ios .radio-checked .radio-inner {
+        border-color: color($colors, secondary);
+    }
+}

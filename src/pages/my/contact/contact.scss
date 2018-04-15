@@ -1,0 +1,21 @@
+page-contact {
+    padding: 10px;
+    .scroll-content {
+        padding: 10px;
+        background-color: #fff;
+        background-image: url(../assets/images/bg/version-bg.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    .contact-list {
+        margin-top: 30px;
+        .contact {
+            height: 30px;
+            line-height: 30px;
+            label {
+                min-width: 70px;
+            }
+        }
+    }
+}

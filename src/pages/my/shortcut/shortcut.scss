@@ -1,0 +1,36 @@
+page-shortcut {
+    .tool-box-label {
+        padding: 4px 10px;
+    }
+    .tool-icon {
+        position: relative;
+        display: inline-block;
+    }
+    .tool-icon:before {
+        display: inline-block;
+        font-family: "Ionicons";
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        text-rendering: auto;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        position: absolute;
+        top: 0;
+        right: -10px;
+    }
+    .del-icon:before {
+        content: '\f2bf';
+        color: #999;
+    }
+    .has-add-icon:before {
+        content: '\f2bb';
+        color: #999;
+    }
+    .no-add-icon:before {
+        content: '\f272';
+        color: #55acee;
+    }
+}

@@ -1,0 +1,94 @@
+.school-news-tabs {
+    overflow: hidden;
+    height: 45px;
+    margin-top: 5px;
+    border-bottom: 1px solid color($colors, light);
+    background: #fff;
+    li {
+        display: block;
+        height: 100%;
+        width: 50%;
+        float: left;
+        text-align: center;
+        a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+        label {
+            display: inline-block;
+            height: 100%;
+            line-height: 45px;
+        }
+    }
+    li.check {
+        label {
+            border-bottom: 2px solid color($colors, secondary);
+        }
+    }
+}
+
+page-notice {
+    .scroll-content {
+        -webkit-user-select: auto !important;
+        -moz-user-select: auto !important;
+        -ms-user-select: auto !important;
+        user-select: auto !important;
+    }
+    .selectable {
+        -webkit-user-select: auto; //控制网页内容选择范围
+    }
+    ion-label div {
+        margin-bottom: 5px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .ion-segment {
+        background: #fff;
+        border: none;
+        margin: 10px 0;
+    }
+    .segment-ios {
+        border-bottom: 1px solid color($colors, light);
+    }
+    .segment-ios .segment-button {
+        border: none;
+        background: #fff;
+        color: #000;
+        height: 40px;
+        label {
+            display: inline-block;
+            height: 40px;
+            line-height: 40px;
+            vertical-align: top;
+            padding: 0 5px;
+        }
+    }
+    .segment-ios .segment-button:first-of-type {
+        border: none;
+        border-radius: 0;
+    }
+    .segment-ios .segment-button.segment-activated {
+        background: #fff;
+        color: #000;
+        label {
+            border-bottom: 2px solid color($colors, secondary);
+        }
+    }
+    .card-ios {
+        border-radius: 5px;
+        padding: 8px;
+    }
+    .card-title {
+        height: 28px;
+        line-height: 28px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .card-time {
+        color: #bcbcbc;
+    }
+    .has-refresher>.scroll-content {
+        border-top: none;
+    }
+}
